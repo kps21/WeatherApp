@@ -20,6 +20,7 @@ const WeatherSearch = () => {
     try {
       const data = await getWeatherData(city);
       setWeather(data);
+      setError(null);
       console.log(data);
     } catch (error) {
       setError(error.message);
