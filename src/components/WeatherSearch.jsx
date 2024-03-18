@@ -77,7 +77,7 @@ const WeatherSearch = () => {
               </p>
             </Grid>
           </form>
-          {weather && (
+          {weather && !error && (
             <Card
               style={{
                 marginTop: "20px",
@@ -105,7 +105,7 @@ const WeatherSearch = () => {
             </Card>
           )}
         </Grid>
-        {weather && (
+        {weather && !error && (
           <Grid item xs={8} sm={4} style={{ marginTop: "54px" }}>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               <Grid
