@@ -57,10 +57,21 @@ const WeatherSearch = () => {
                 />
               </Grid>
               <Grid item xs={4}>
-                <Button type="submit" variant="contained" color="primary" style={{ fontFamily: " montserrat, sans-serif" }}>
+                <Button
+                  type="submit"
+                  variant="contained"
+                  color="primary"
+                  style={{ fontFamily: " montserrat, sans-serif" }}
+                >
                   Search
                 </Button>
               </Grid>
+              <p
+                style={{ fontFamily: " montserrat, sans-serif", color: "red", marginTop:"0", marginLeft:"10px" }}
+                variant="h6"
+              >
+                {error}
+              </p>
             </Grid>
           </form>
           {weather && (
