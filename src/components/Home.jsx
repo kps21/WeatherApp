@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import WeatherData from "./WeatherData"; // Component to display weather data
 import { getWeatherData } from "../service/Api";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
