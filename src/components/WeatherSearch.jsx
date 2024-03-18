@@ -1,16 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import WeatherData from "./WeatherData"; // Component to display weather data
 import { getWeatherData } from "../service/Api";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
-import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
 import weatherIcon from "./weather.png";
-import { Input } from "@material-ui/core";
 
 const WeatherSearch = () => {
   const [city, setCity] = useState("");
@@ -67,7 +64,12 @@ const WeatherSearch = () => {
                 </Button>
               </Grid>
               <p
-                style={{ fontFamily: " montserrat, sans-serif", color: "red", marginTop:"0", marginLeft:"10px" }}
+                style={{
+                  fontFamily: " montserrat, sans-serif",
+                  color: "red",
+                  marginTop: "0",
+                  marginLeft: "10px",
+                }}
                 variant="h6"
               >
                 {error}
